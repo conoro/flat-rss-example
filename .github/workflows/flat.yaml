@@ -26,3 +26,4 @@ jobs:
         with:
           http_url: https://www.marathon.tokyo/en/news/ # The data to fetch every 5 minutes
           downloaded_filename: tokyo-marathon.html # The http_url gets saved and renamed in our repository as tokyo-marathon.html
+          postprocess: postprocess.ts

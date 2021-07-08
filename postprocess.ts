@@ -33,7 +33,7 @@ $(".textcolor_yellowgreen_02").each((i, elem) => {
   }
 });
 
-await removeFile(filename)
+// await removeFile(filename)
 
 const newFilename = `tokyo-marathon.xml`;
 await writeTXT(newFilename, myFeed.rss2());
