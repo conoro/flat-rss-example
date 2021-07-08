@@ -6,7 +6,7 @@ on:
       - .github/workflows/flat.yml # Only run a new workflow every time this file (flat.yaml) file changes
   workflow_dispatch: # Required even though this is currently empty
   schedule:
-    - cron: '*/5 * * * *' # Run this workflow every 5 minutes
+    - cron: '10 * * * *' # Run this workflow once an hour at 10 past
 
 jobs:
   scheduled:
@@ -24,6 +24,6 @@ jobs:
       - name: Fetch data 
         uses: githubocto/flat@v2
         with:
-          http_url: https://www.marathon.tokyo/en/news/ # The data to fetch every 5 minutes
+          http_url: https://www.marathon.tokyo/en/news/ # The data to fetch every time
           downloaded_filename: tokyo-marathon.html # The http_url gets saved and renamed in our repository as tokyo-marathon.html
           postprocess: postprocess.ts
