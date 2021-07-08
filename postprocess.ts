@@ -1,6 +1,6 @@
 // Helper library written for useful postprocessing tasks with Flat Data
 // Has helper functions for manipulating csv, json, excel, zip, and image files
-import { readTXT, writeTXT } from "https://deno.land/x/flat@0.0.9/mod.ts";
+import { readTXT, writeTXT } from "https://deno.land/x/flat@0.0.11/mod.ts";
 
 const filename = Deno.args[0]; // Same name as downloaded_filename
 const html = await readTXT(filename);
