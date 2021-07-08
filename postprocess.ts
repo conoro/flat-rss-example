@@ -8,8 +8,6 @@ const html = await readTXT(filename);
 import { cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
 import { Feed } from "https://jspm.dev/feed";
 
-const url = "https://www.marathon.tokyo/en/news/";
-
 const myFeed = new Feed({
   title: "Tokyo Marathon RSS",
   description: "Return latest news from the Tokyo Marathon",
